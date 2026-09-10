@@ -17,7 +17,8 @@ export default function Header({ breadcrumbReplacements = {}, hidden = false }) 
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
               transition={{ duration: 0.2 }}
-              className="flex items-center bg-white rounded-full pointer-events-auto h-12"
+              className="flex items-center rounded-full pointer-events-auto h-12 border border-white/30 shadow-[0_12px_32px_color-mix(in_srgb,var(--corporate-color)_28%,transparent)] backdrop-blur-xl"
+              style={{ backgroundColor: "color-mix(in srgb, var(--corporate-color) 82%, transparent)" }}
             >
               <motion.button
                 onClick={() => setIsMenuOpen(true)}
@@ -26,13 +27,13 @@ export default function Header({ breadcrumbReplacements = {}, hidden = false }) 
                 className="h-full pl-6 pr-3 flex items-center justify-center group relative z-10"
               >
                 <div className="flex flex-col gap-1 w-5">
-                  <span className="h-[2px] w-full bg-[var(--text-primary)] rounded-full" />
-                  <span className="h-[2px] w-full bg-[var(--text-primary)] rounded-full" />
+                  <span className="h-[2px] w-full bg-white rounded-full" />
+                  <span className="h-[2px] w-full bg-white rounded-full" />
                 </div>
               </motion.button>
 
               {/* Divider Line */}
-              <div className="w-[1px] h-4 bg-[var(--border-color)]/20" />
+              <div className="w-[1px] h-4 bg-white/35" />
               
               <div className="pl-3 pr-6 flex items-center h-full">
                 <Breadcrumbs replacements={breadcrumbReplacements} />
