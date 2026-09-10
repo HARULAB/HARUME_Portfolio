@@ -153,7 +153,7 @@ const WorksPage = ({ isTeaser = false }) => {
                     {/* Year Divider */}
                     <div className="flex items-center gap-6 mb-12">
                       <h2
-                        className="text-5xl md:text-6xl font-black text-[var(--text-primary)] font-sans tracking-tighter"
+                        className="text-5xl md:text-6xl font-black text-[var(--text-primary)] opacity-25 font-sans tracking-tighter"
                         style={{ fontFamily: "var(--font-display)" }}
                       >
                         {year}
