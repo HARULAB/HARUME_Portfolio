@@ -64,7 +64,7 @@ export default function AboutPage() {
                 </DetailsInfo>
 
                 <DetailsInfo summary="スキル">
-                  <ul className="space-y-4 text-sm font-bold text-[var(--text-primary)]">
+                  <ul className="space-y-4 text-sm md:text-base font-bold text-[var(--text-primary)]">
                     <li className="flex items-center gap-4">
                       <span className="w-1.5 h-1.5 rounded-full bg-[var(--corporate-color)]" />
                       3Dやモーショングラフィックスを用いた映像制作
@@ -81,25 +81,19 @@ export default function AboutPage() {
                 </DetailsInfo>
 
                 <DetailsInfo summary="SNS・お問い合わせ">
-                  <div className="space-y-10 pt-4 pb-2">
+                  <div className="space-y-6 pt-1 pb-2">
                     <div className="space-y-2">
-                      <p className="text-xs uppercase tracking-widest text-[var(--text-primary)] font-bold font-display">
-                        MAIL
-                      </p>
                       <a 
                          href={`mailto:${SOCIAL_LINKS.email}`} 
                          className="group flex items-center text-[var(--text-primary)] hover:opacity-60 transition-opacity"
                       >
-                         <span className="text-xl md:text-2xl font-black font-display tracking-tight">
+                         <span className="text-sm md:text-base font-bold tracking-tight">
                            {SOCIAL_LINKS.email}
                          </span>
                       </a>
                     </div>
 
                     <div className="space-y-4">
-                      <p className="text-xs uppercase tracking-widest text-[var(--text-primary)] font-bold font-display">
-                        SOCIAL
-                      </p>
                       <div className="flex w-full gap-4 md:justify-start">
                         {[
                           { name: "Twitter", url: SOCIAL_LINKS.twitter, icon: <FaTwitter /> },

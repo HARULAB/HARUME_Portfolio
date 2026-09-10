@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 const PriceSummary = ({
   totalPrice,
   productionLevel,
@@ -13,9 +15,16 @@ const PriceSummary = ({
       <div className="space-y-4 border-t border-[var(--border-color)]/20 pt-6">
         <div className="flex items-baseline gap-3">
           <span className="text-xl md:text-2xl font-bold">¥</span>
-          <span className="text-6xl md:text-8xl font-bold tracking-tighter" style={{ fontFamily: 'var(--font-display)' }}>
+          <motion.span
+            key={totalPrice}
+            initial={{ opacity: 0, y: 12, scale: 0.96 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            transition={{ type: "spring", stiffness: 360, damping: 24 }}
+            className="text-6xl md:text-8xl font-semibold tracking-tighter"
+            style={{ fontFamily: 'var(--font-display)' }}
+          >
             {totalPrice.toLocaleString()}
-          </span>
+          </motion.span>
           <span className="text-sm font-bold opacity-30 tracking-widest uppercase">JPY</span>
         </div>
       </div>

@@ -10,7 +10,7 @@ const SelectField = ({ id, label, subLabel, options, onChange, value, type = "se
       <div className="space-y-6">
         <div className="space-y-1">
           {label && (
-            <h3 className="text-sm font-bold text-[var(--text-secondary)] tracking-[0.3em] uppercase opacity-40">
+            <h3 className="text-sm font-bold text-[var(--text-primary)] tracking-[0.3em] uppercase">
               {label}
             </h3>
           )}
@@ -27,7 +27,7 @@ const SelectField = ({ id, label, subLabel, options, onChange, value, type = "se
             name={id}
             value={value}
             onChange={onChange}
-            className="w-full h-16 px-6 bg-[var(--bg-secondary)]/40 border border-[var(--border-color)]/10 rounded-2xl font-bold text-[var(--text-primary)] appearance-none focus:outline-none focus:border-[var(--corporate-color)] transition-all cursor-pointer text-left flex items-center justify-start pr-12"
+            className="w-full h-16 px-6 bg-white border-0 rounded-2xl font-bold text-[var(--text-primary)] appearance-none outline-none cursor-pointer text-left flex items-center justify-start pr-12"
           >
             {options.map((opt) => (
               <option key={`${id}-${opt.value}`} value={opt.value}>
@@ -36,7 +36,7 @@ const SelectField = ({ id, label, subLabel, options, onChange, value, type = "se
             ))}
           </select>
           <div className="absolute right-6 top-1/2 -translate-y-1/2 pointer-events-none flex items-center justify-center">
-            <div className="w-8 h-8 rounded-full bg-[var(--bg-primary)] flex items-center justify-center text-[var(--corporate-color)] transition-all duration-300 group-hover:scale-110">
+            <div className="w-8 h-8 rounded-full bg-[var(--corporate-color)] flex items-center justify-center text-white transition-all duration-300 group-hover:scale-110">
               <ChevronDown size={16} />
             </div>
           </div>

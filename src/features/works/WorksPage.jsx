@@ -60,6 +60,7 @@ const WorksPage = ({ isTeaser = false }) => {
                   <Button
                     onClick={() => setIsFilterOpen(!isFilterOpen)}
                     aria-label="Filter"
+                    className="!border-0 hover:!border-2"
                     icon={
                       <ChevronDown
                         size={14}
@@ -130,6 +131,7 @@ const WorksPage = ({ isTeaser = false }) => {
                   href="https://www.youtube.com/watch?v=rykHVO-OW8k&list=PL_IDDWCeMOvfUv5lD2VfvLX4TSVfLvrZv"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="!border-0 hover:!border-2"
                   icon={<ExternalLink size={14} />}
                 >
                   PLAYLIST
@@ -151,7 +153,7 @@ const WorksPage = ({ isTeaser = false }) => {
                     {/* Year Divider */}
                     <div className="flex items-center gap-6 mb-12">
                       <h2
-                        className="text-5xl md:text-6xl font-black text-[var(--text-primary)] opacity-10 font-sans tracking-tighter"
+                        className="text-5xl md:text-6xl font-black text-[var(--text-primary)] font-sans tracking-tighter"
                         style={{ fontFamily: "var(--font-display)" }}
                       >
                         {year}

@@ -13,7 +13,7 @@ export default function Footer() {
         {/* Social Links */}
         <div className="flex gap-4">
           <a
-            href="https://twitter.com/your_x_account"
+            href="https://x.com/Harulablab"
             target="_blank"
             rel="noopener noreferrer"
             className="!text-white hover:opacity-60 transition-opacity"
@@ -22,7 +22,7 @@ export default function Footer() {
             <FaTwitter className="w-4 h-4" />
           </a>
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/harumememe/"
             target="_blank"
             rel="noopener noreferrer"
             className="!text-white hover:opacity-60 transition-opacity"
@@ -31,7 +31,7 @@ export default function Footer() {
             <FaInstagram className="w-4 h-4" />
           </a>
           <a
-            href="https://github.com"
+            href="https://github.com/HARULAB"
             target="_blank"
             rel="noopener noreferrer"
             className="!text-white hover:opacity-60 transition-opacity"

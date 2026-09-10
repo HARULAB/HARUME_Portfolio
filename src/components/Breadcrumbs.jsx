@@ -25,10 +25,10 @@ const Breadcrumbs = ({ replacements = {} }) => {
 
     return (
       <div key={href} className="flex items-center">
-        <a href={href} className={`rounded-full px-1.5 py-1 text-white transition-colors hover:bg-white/20 font-display ${isLast ? 'font-bold' : 'hover:opacity-80'}`}>
+        <a href={href} className={`rounded-full px-1.5 py-1 transition-colors hover:bg-black/5 font-display ${isLast ? 'font-bold' : 'hover:opacity-70'}`} style={{ color: '#111827' }}>
             {title.toUpperCase()}
         </a>
-        {!isLast && <ChevronRight size={14} className="mx-1.5 text-white" />}
+        {!isLast && <ChevronRight size={14} className="mx-1.5" color="#111827" />}
       </div>
     );
   });
@@ -36,10 +36,10 @@ const Breadcrumbs = ({ replacements = {} }) => {
   return (
     <nav className="flex items-center text-[10px] font-bold tracking-[0.2em] whitespace-nowrap font-display">
       <div className="flex items-center">
-        <a href={withBase('/')} className="rounded-full px-1.5 py-1 text-white hover:bg-white/20 transition-colors font-display">
+        <a href={withBase('/')} className="rounded-full px-1.5 py-1 hover:bg-black/5 transition-colors font-display" style={{ color: '#111827' }}>
           HOME
         </a>
-        {pathSegments.length > 0 && <ChevronRight size={14} className="mx-1.5 text-white" />}
+        {pathSegments.length > 0 && <ChevronRight size={14} className="mx-1.5" color="#111827" />}
       </div>
       {breadcrumbs}
     </nav>

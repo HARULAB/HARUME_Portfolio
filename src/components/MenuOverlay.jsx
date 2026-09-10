@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Twitter, Instagram, Youtube } from 'lucide-react';
+import { X, Twitter, Instagram, Github } from 'lucide-react';
 import { withBase } from '../utils/paths';
 
 const menuItems = [
@@ -86,7 +86,7 @@ const MenuOverlay = ({ isOpen, onClose }) => {
             >
               <div className="flex gap-2 items-center text-white">
                 <a 
-                  href="https://x.com/harulablab" 
+                  href="https://x.com/Harulablab"
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="p-2 hover:opacity-60 transition-all active:scale-90"
@@ -95,7 +95,7 @@ const MenuOverlay = ({ isOpen, onClose }) => {
                   <Twitter size={22} strokeWidth={2.5} />
                 </a>
                 <a 
-                  href="https://instagram.com" 
+                  href="https://www.instagram.com/harumememe/"
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="p-2 hover:opacity-60 transition-all active:scale-90"
@@ -104,13 +104,13 @@ const MenuOverlay = ({ isOpen, onClose }) => {
                   <Instagram size={22} strokeWidth={2.5} />
                 </a>
                 <a 
-                  href="https://youtube.com" 
+                  href="https://github.com/HARULAB"
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="p-2 hover:opacity-60 transition-all active:scale-90"
-                  aria-label="YouTube"
+                  aria-label="GitHub"
                 >
-                  <Youtube size={22} strokeWidth={2.5} />
+                  <Github size={22} strokeWidth={2.5} />
                 </a>
               </div>
             </motion.div>
